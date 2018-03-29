@@ -1,19 +1,13 @@
-# RedDot-OBS-Studio-plugin
+## OBS Studio Recording Dot
 
-Since this is my first plugin, lots of credit goes to SRBeep plugin, from which I learned about the necessary OBS studio APIs I had to use, both before and after the frontend API was written.
+see README-original.md for the original author's readme.
 
-And also the [#obs-dev channel on quakenet](http://webchat.quakenet.org/?channels=obs-dev).
+The original "red dot" plugin was only built for 32 bit systems, I needed 64bit and more up-to-date build tools.
 
-# Build
+This fork adds a cmake file and windows batch script for easy building of both 32 and 64 bit versions without having to have a full visual studio install. It's also configured to use the visual studio 2017 build tools (unlike the original plugin which uses vs2013).
 
-1. Clone this repo into obs-studio/build folder
-2. Add it to the Visual Studio 2013 solution
-3. Build, files should be generated in obs-studio/build/plugins/RedDot folder
+*Needs a working obs studio development environment, and a currently built version of the source code for certain obs library includes*
 
-# Install
+As the code is not mine, no support will be given by me if it doesn't work for you once compiled. All I've done in this fork / branch is add the ability to build it "automatically" using command line tools instead of having to fiddle around with visual studio's IDE. I also will not be providing any binary releases (sorry).
 
-This plugin requires the [RivaTuner Statistics Server](http://www.guru3d.com/content-page/rivatuner.html) or any software that uses it (MSI AfterBurner, EVGA Precision).
 
-1. Copy all the files inside the zip file to C:\Program Files (x86)\obs-studio\obs-plugins\32bit folder
-
-2. Run OBS
