@@ -1,6 +1,6 @@
 #include "RtssInterface.h"
 #include "StdAfx.h"
-#include "RTSSSharedMemory.h"
+#include "rtss_include/RTSSSharedMemory.h"
 #include "GroupedString.h"
 
 RtssInterface::RtssInterface() {
